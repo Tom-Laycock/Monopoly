@@ -1,0 +1,113 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(11, 70px);
+  grid-template-rows: repeat(11, 70px);
+  width: 770px;
+  height: 770px;
+  margin: 20px auto;
+  border: 3px solid #333;
+  background: #eee;
+}
+
+.tile {
+  border: 1px solid #555;
+  position: relative;
+  background: #fafafa;
+  box-sizing: border-box;
+}
+
+.tile.corner { background: #ffe4b5; }
+.tile.house { border: 2px solid green; }
+.tile.chance { background: #f9d923; }
+.tile.community-chest { background: #b3e5fc; }
+.tile.regular { background: #f0f0f0; }
+
+.tile-number {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  font-size: 11px;
+  color: #666;
+}
+
+.players {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.player {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: crimson;
+  color: white;
+  font-size: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-display {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+
+.current-call {
+  font-size: 36px;
+  font-weight: bold;
+  color: #222;
+}
+
+.previous-call {
+  font-size: 18px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.filter-display {
+  font-size: 16px;
+  color: #333;
+  margin-top: 4px;
+}
+
+#root {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: antiquewhite;
+  color: black;
+}
+
+label {
+  color: black;
+}
+
+.player-ticket-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #4527a0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 4px;
+  border: 2px solid #311b92;
+  transition: background 0.2s;
+}
+.player-ticket-circle.called {
+  background: #b39ddb;
+  border: 2px solid #ede7f6;
+}

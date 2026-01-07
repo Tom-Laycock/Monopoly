@@ -1,6 +1,4 @@
-# Monopoly
-
-## Monopoly Sim App
+# Monopoly Sim App
 
 ### How to run
 
