@@ -1,0 +1,647 @@
+{
+  "players": [
+    {
+      "id": 0,
+      "name": "0",
+      "start": 0,
+      "ticket": [
+        6,
+        1,
+        14,
+        19,
+        18,
+        27,
+        24,
+        23,
+        32,
+        31
+      ]
+    },
+    {
+      "id": 1,
+      "name": "1",
+      "start": 0,
+      "ticket": [
+        6,
+        1,
+        4,
+        16,
+        19,
+        18,
+        21,
+        23,
+        37,
+        31
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "call": 0,
+      "number": 29,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            7,
+            22
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            7,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "call": 1,
+      "number": 37,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            4,
+            4
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            4,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "call": 2,
+      "number": 4,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            5,
+            2
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            5,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "call": 3,
+      "number": 6,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            2
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "call": 4,
+      "number": 39,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            7,
+            9,
+            17
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            7,
+            9,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "call": 5,
+      "number": 12,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            7,
+            6
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            7,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "call": 6,
+      "number": 9,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            10,
+            27
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            10,
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "call": 7,
+      "number": 32,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            7,
+            9,
+            7
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            6,
+            9,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "call": 8,
+      "number": 28,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            4,
+            32
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            4,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "call": 9,
+      "number": 34,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            6
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "call": 10,
+      "number": 16,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            2,
+            20
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            2,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "call": 11,
+      "number": 26,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            10
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "call": 12,
+      "number": 13,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            10,
+            17
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            10,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "call": 13,
+      "number": 38,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            9,
+            16
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            9,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "call": 14,
+      "number": 8,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            10
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "call": 15,
+      "number": 1,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            7,
+            7,
+            19
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            7,
+            7,
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "call": 16,
+      "number": 25,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            6,
+            18
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            6,
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "call": 17,
+      "number": 27,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            2
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "call": 18,
+      "number": 15,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            9,
+            19
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            9,
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "call": 19,
+      "number": 3,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            7,
+            21
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            7,
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "call": 20,
+      "number": 23,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            10,
+            10
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            10,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "call": 21,
+      "number": 24,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            6,
+            7,
+            28
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            6,
+            7,
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "call": 22,
+      "number": 5,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            10,
+            11
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            10,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "call": 23,
+      "number": 19,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            7,
+            7
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            7,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "call": 24,
+      "number": 18,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            3,
+            36
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            3,
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "call": 25,
+      "number": 31,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            6,
+            7
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            7,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "call": 26,
+      "number": 21,
+      "rolls": [
+        {
+          "playerId": 0,
+          "rolls": [
+            5,
+            25
+          ]
+        },
+        {
+          "playerId": 1,
+          "rolls": [
+            5,
+            25
+          ]
+        }
+      ]
+    }
+  ],
+  "board": [
+    2,
+    1,
+    8,
+    1,
+    1,
+    1,
+    1,
+    4,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    8,
+    1,
+    1,
+    2,
+    1,
+    4,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    8,
+    1,
+    1,
+    4,
+    1,
+    1,
+    1
+  ],
+  "winnerPlayerIds": [
+    1
+  ],
+  "batchOutcome": {
+    "numberOfGames": 1000,
+    "minWinningCallNumber": 17,
+    "averageWinningCallNumber": 27.207,
+    "maxWinningCallNumber": 30,
+    "minWinnerCount": 1,
+    "averageWinnerCount": 1.222,
+    "maxWinnerCount": 2,
+    "minDiceRollsForAPlayer": 33,
+    "averageDiceRollsForAPlayer": 49.653,
+    "maxDiceRollsForAPlayer": 62,
+    "minCallLength": 3.0,
+    "averageCallLength": 5.6857142,
+    "maxCallLength": 12.8,
+    "minGameLength": 123.6,
+    "averageGameLength": 197.96579,
+    "maxGameLength": 263.6,
+    "ammountWonCommunityPrize": 10
+  },
+  "gameInfo": {
+    "ticketBatches": 1,
+    "ticketCount": 1000,
+    "playerCount": 2
+  }
+}

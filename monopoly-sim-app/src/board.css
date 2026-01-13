@@ -54,7 +54,7 @@
 .call-display {
   position: absolute;
   top: 50%;
-  left: 35%;
+  left: calc(35% + 162px);
   transform: translate(-50%, -50%);
   text-align: center;
   pointer-events: none;
