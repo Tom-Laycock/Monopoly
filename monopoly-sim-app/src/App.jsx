@@ -307,6 +307,39 @@ export default function App() {
     { title: null, keys: ["ammountWonCommunityPrize"] }
   ];
 
+  const formatMoneyFromMinorUnits = (value, currency = "GBP") => {
+    if (typeof value !== "number" || Number.isNaN(value)) return String(value ?? "");
+    // Your data is in minor units (pence). 200 -> £2.00
+    return new Intl.NumberFormat("en-GB", {
+      style: "currency",
+      currency,
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }).format(value / 100);
+  };
+
+  const formatPercent = value => {
+    if (typeof value !== "number" || Number.isNaN(value)) return String(value ?? "");
+    return `${value.toFixed(2)}%`;
+  };
+
+  const moneyKeys = new Set([
+    "totalStakePerGame",
+    "totalStake",
+    "totalPrizeFromCommunityPrize",
+    "individualPrizeFromCommmunityPrize"
+  ]);
+
+  const renderBatchOutcomeValue = (key, value) => {
+    if (moneyKeys.has(key)) return formatMoneyFromMinorUnits(value);
+    if (key === "rtp") return formatPercent(value);
+
+    if (typeof value === "number") {
+      return Number.isInteger(value) ? value : value.toFixed(3);
+    }
+    return String(value);
+  };
+
   const renderKeyValueList = obj => {
     if (!obj || typeof obj !== "object") return null;
 
@@ -356,40 +389,40 @@ export default function App() {
             <div style={{ marginTop: 16 }}>
               <div id="batch-outcome" style={{ fontWeight: "bold", marginBottom: 8, textAlign: "center" }}>Batch Outcome</div>
 
-              {gameData.batchOutcome
-                ? (
-                  <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-                    {batchOutcomeGroups.map((group, idx) => {
-                      const lines = group.keys
-                        .filter(k => gameData.batchOutcome[k] !== undefined && gameData.batchOutcome[k] !== null)
-                        .map(k => ({ key: k, value: gameData.batchOutcome[k] }));
+              {gameData.batchOutcome ? (
+                <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+                  {batchOutcomeGroups.map((group, idx) => {
+                    const lines = group.keys
+                      .filter(k => gameData.batchOutcome[k] !== undefined && gameData.batchOutcome[k] !== null)
+                      .map(k => ({ key: k, value: gameData.batchOutcome[k] }));
 
-                      if (lines.length === 0) return null;
+                    if (lines.length === 0) return null;
 
-                      return (
-                        <div key={idx} style={{ borderTop: idx === 0 ? "none" : "1px solid #0001", paddingTop: idx === 0 ? 0 : 10 }}>
-                          {group.title && (
-                            <div style={{ fontSize: 13, fontWeight: 700, color: "#333", marginBottom: 6 }}>
-                              {group.title}
-                            </div>
-                          )}
-
-                          <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-                            {lines.map(({ key, value }) => (
-                              <div key={key} style={{ display: "flex", justifyContent: "space-between", gap: 8 }}>
-                                <span style={{ color: "#444", maxWidth: 150, wordWrap: "break-word" }}>{key}</span>
-                                <span style={{ fontWeight: 600 }}>
-                                  {typeof value === "number" ? (Number.isInteger(value) ? value : value.toFixed(3)) : String(value)}
-                                </span>
-                              </div>
-                            ))}
+                    return (
+                      <div key={idx} style={{ borderTop: idx === 0 ? "none" : "1px solid #0001", paddingTop: idx === 0 ? 0 : 10 }}>
+                        {group.title && (
+                          <div style={{ fontSize: 13, fontWeight: 700, color: "#333", marginBottom: 6 }}>
+                            {group.title}
                           </div>
+                        )}
+
+                        <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                          {lines.map(({ key, value }) => (
+                            <div key={key} style={{ display: "flex", justifyContent: "space-between", gap: 8 }}>
+                              <span style={{ color: "#444", maxWidth: 150, wordWrap: "break-word" }}>{key}</span>
+                              <span style={{ fontWeight: 600 }}>
+                                {renderBatchOutcomeValue(key, value)}
+                              </span>
+                            </div>
+                          ))}
                         </div>
-                      );
-                    })}
-                  </div>
-                )
-                : <div style={{ color: "#666", fontSize: 13, textAlign: "center" }}>No batchOutcome for this game</div>}
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <div style={{ color: "#666", fontSize: 13, textAlign: "center" }}>No batchOutcome for this game</div>
+              )}
             </div>
 
           </div>
