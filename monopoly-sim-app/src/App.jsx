@@ -294,6 +294,16 @@ export default function App() {
     { title: "Dice rolls for a player", keys: ["minDiceRollsForAPlayer", "averageDiceRollsForAPlayer", "maxDiceRollsForAPlayer"] },
     { title: "Call length", keys: ["minCallLength", "averageCallLength", "maxCallLength"] },
     { title: "Game length", keys: ["minGameLength", "averageGameLength", "maxGameLength"] },
+    {
+      title: "Stakes & RTP",
+      keys: [
+        "totalStakePerGame",
+        "totalStake",
+        "totalPrizeFromCommunityPrize",
+        "individualPrizeFromCommmunityPrize",
+        "rtp"
+      ]
+    },
     { title: null, keys: ["ammountWonCommunityPrize"] }
   ];
 
@@ -367,7 +377,7 @@ export default function App() {
                           <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
                             {lines.map(({ key, value }) => (
                               <div key={key} style={{ display: "flex", justifyContent: "space-between", gap: 8 }}>
-                                <span style={{ color: "#444" }}>{key}</span>
+                                <span style={{ color: "#444", maxWidth: 150, wordWrap: "break-word" }}>{key}</span>
                                 <span style={{ fontWeight: 600 }}>
                                   {typeof value === "number" ? (Number.isInteger(value) ? value : value.toFixed(3)) : String(value)}
                                 </span>
@@ -433,7 +443,7 @@ export default function App() {
 
             {/* Winner display below Start */}
             {Array.isArray(gameData.winnerPlayerIds) && (
-              <div style={{ marginTop: "10px", fontWeight: "bold", color: "#388e3c" }}>
+              <div style={{ marginTop: "10px", fontWeight: "bold", color: "#388e3c", maxWidth: 400 }}>
                 Winner(s){gameData.winnerPlayerIds.length > 1 ? "s" : ""}:{" "}
                 {gameData.winnerPlayerIds.join(", ")} on call {gameData.calls.length}
               </div>
